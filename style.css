@@ -447,15 +447,16 @@ input:where([type='text'], [type='email' ]) {
 }
 
 .faq-answer {
-visibility: hidden;
+height: 0px;
 opacity: 0;
-transition-property: visibility opacity;
+overflow: hidden;
+transition-property: height opacity;
 transition-duration: 1s;
-transition-behavior: allow-discrete;
 }
 
 .faq-answer-display-block {
-  visibility: visible;
+  height: auto;
+  height: calc-size(auto);
   opacity: 1;
 
   @starting-style {
