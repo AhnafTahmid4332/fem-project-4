@@ -447,11 +447,18 @@ input:where([type='text'], [type='email' ]) {
 }
 
 .faq-answer {
-  display: none;
+display: none;
+transition-property: display;
+transition-duration: 500ms;
+transition-behavior: allow-discrete;
 }
 
 .faq-answer-display-block {
   display: block;
+
+  @starting-style {
+    display: none;
+  }
 }
 
 
