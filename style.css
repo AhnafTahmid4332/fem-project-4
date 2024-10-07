@@ -162,7 +162,7 @@ p[data-width="wide"] {
   color: var(--clr-accent-300);
 }
 
-/* navigation */
+/* header */
 
 .primary-header {
   padding-top: var(--size-700);
@@ -191,8 +191,9 @@ p[data-width="wide"] {
     top: 0;
   }
 }
-/* Add this to your existing CSS */
 
+
+/* navigation */
 
 
 .nav-wrapper {
@@ -225,7 +226,7 @@ p[data-width="wide"] {
   color: var(--clr-accent-400);
 }
 
-@media (max-width: 47em) {
+@media (max-width: 910px) {
 
   .primary-header[data-overlay] {
     position: relative;
@@ -233,14 +234,17 @@ p[data-width="wide"] {
   }
 
 
+
   .primary-navigation {
     display: none;
-
     position: fixed;
+    
+    top: 0;
+    right: 5em;
+    left: 0;
+    bottom: 0;
     padding: var(--size-700);
-    inset: 7rem var(--size-400) auto;
-    max-width: 25rem;
-    margin-inline: auto;
+    max-width: 20rem;
     background: var(--clr-neutral-100);
     border-radius: var(--size-100);
     box-shadow: 0 0 0.75em rgb(0, 0, 0, 0.05);
@@ -257,7 +261,7 @@ p[data-width="wide"] {
   .nav-list {
     display: grid;
     gap: var(--size-600);
-    text-align: center;
+    text-align: left;
     font-weight: var(--fw-bold);
   }
 
@@ -268,9 +272,6 @@ p[data-width="wide"] {
 
   .mobile-nav-toggle {
     display: block;
-    position: fixed;
-    top: var(--size-600);
-    right: var(--size-400);
     cursor: pointer;
     background: transparent;
     border: 0;
@@ -287,6 +288,7 @@ p[data-width="wide"] {
 .mobile-nav-toggle[aria-expanded="true"] {
   background-image: url("images/icon-close.svg");
 }
+
 }
 
 
@@ -429,11 +431,20 @@ input:where([type='text'], [type='email' ]) {
   }
 }
 
+/* Pricing Section */
+
+.pricing-section {
+  padding-block: 5em;
+
+  
+}
+
 /* FAQ section */
 
 .faq-section {
-  margin: 5em
+  padding-block: 5em;
 }
+
 
 .faq-heading-container {
   display: grid;
@@ -448,18 +459,32 @@ input:where([type='text'], [type='email' ]) {
 
 .faq {
   outline: 2px solid var(--clr-accent-400);
-  display: grid;
-  gap: 1em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
   margin-inline: auto;
+  gap: 1em;
   background-color: var(--clr-neutral-200);
   padding: 3em;
-  min-width: 80vw;
+  min-width: 310px;
   max-width: 800px;
 }
 
+
+
 .faq-question {
  display: grid;
- grid-template-columns: 1fr 2.5rem;
+ grid-template-columns: 1fr 0.2rem;
+ font-size: 1.5rem;
+ min-width: fit-content;
+ flex: 1;
+}
+
+@media (max-width: 680px) {
+  .faq-question {
+   font-size: 1.2rem
+  }
 }
 
 .faq-answer {
@@ -477,13 +502,8 @@ max-height: 200px;
 .faq-question span {
 color: var(--clr-accent-500);
 font-size: var(--size-700);
-cursor: pointer;
- }
-
- @media (max-width: 550px) {
-  
- }
-
+position: sticky;
+}
 
 /* cta */
 
@@ -861,7 +881,7 @@ cursor: pointer;
 
 
 
-@media (min-width:  47em) {
+@media (min-width:  910px) {
   .display-md-inline-flex {
     display: inline-flex;
   }
