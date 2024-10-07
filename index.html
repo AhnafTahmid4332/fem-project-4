@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <header class="primary-header">
+  <header class="primary-header js-header">
     <div class="container">
       <div class="nav-wrapper">
         <a href="#">
@@ -22,8 +22,6 @@
           </svg>
         </a>
         <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
-          <img class="icon-hamburger" src="images/icon-hamburger.svg" alt="" aria-hidden="true">
-          <img class="icon-close" src="images/icon-close.svg" alt="" aria-hidden="true">
           <span class="visually-hidden">Menu</span>
         </button>
         <nav class="primary-navigation" id="primary-navigation">
@@ -45,9 +43,11 @@
       <div class="container">
         <div class="even-columns">
           <div class="flow">
-            <h1 class="fs-primary-heading fw-bold">Bring everyone
-              together to build
-              better products.</h1>
+            <h1 id="target" class=" hero-heading fs-primary-heading fw-bold">
+                Bring everyone
+                together to build <span class="typing-effect">better products.</span>
+           
+           </h1>
             <p>Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in
               view.</p>
             <button class="button">Get Started</button>
@@ -123,7 +123,11 @@
        </div>
 
         <div class="faq-answer js-faq-answer">
+          <div>
+        <p class="text-center">
           On the Free version, you can sync up to 2,000 product SKUs, and with the premium versions you can sync up to 50,000 product SKUs with Google Sheets.
+        </p>
+          </div>
         </div>
 
         </div>
