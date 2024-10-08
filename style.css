@@ -320,7 +320,8 @@ p[data-width="wide"] {
   margin-top: auto;
   display: flex;
   justify-content: center;
-  font-size: 1rem;
+  font-size: 0.8rem;
+  border-radius: 5px;
 }
 
 }
@@ -903,4 +904,60 @@ position: sticky;
   .display-md-inline-flex {
     display: inline-flex;
   }
+}
+
+/* Privacy Policy Page */
+
+.privacy-policy-article {
+margin-block: 0 5em;
+font-family: "Poppins", serif;
+}
+
+.page-banner {
+  background-color: black;
+  width: 100%;
+  margin-block: 1rem 1em;
+  width: 100vw;
+  padding-block: 4rem;
+  text-align: center;
+  color: white;
+  font-size: var(--fs-800);
+  font-weight: 900;
+}
+
+.article-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2em;
+  padding: 2em;
+  margin-inline: auto;
+  max-width: 700px;
+}
+
+.article-container p {
+ min-width: 100%;
+ color: black;
+ font-weight: 700px;
+}
+
+.ordered-list {
+display: flex;
+flex-direction: column;
+font-size: 1rem;
+}
+
+
+.ordered-list li::marker {
+content: '.';
+font-size: 3rem;
+}
+
+.ordered-list li strong {
+font-weight: 700;
+}
+
+.update-date,
+.company-right {
+  font-weight: 700;
 }
