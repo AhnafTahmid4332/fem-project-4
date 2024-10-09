@@ -1032,7 +1032,6 @@ font-weight: 700;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 2em;
     gap: 4em;
   }
 
@@ -1040,6 +1039,7 @@ font-weight: 700;
   .price-cards {
     display: flex;
     gap: 2rem;
+    padding: 2em;
   }
 
   @media (max-width: 1200px) {
