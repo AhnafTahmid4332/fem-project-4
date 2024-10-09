@@ -1032,6 +1032,7 @@ font-weight: 700;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    padding: 2em;
     gap: 4em;
   }
 
