@@ -21,18 +21,30 @@ mobileNavToggleClose.addEventListener('click', () => {
 
 
 // FAQ section toggle functionality
-const faqIcons = document.querySelectorAll('.faq-icon');
+const openButtons = document.querySelectorAll('.faq-icon');
 const faqAnswers = document.querySelectorAll('.js-faq-answer');
 
-faqIcons.forEach((icon, index) => {
-  icon.addEventListener('click', () => {
-    faqAnswers[index].classList.toggle('faq-answer-show');
+openButtons.forEach((button, index) => {
+  button.addEventListener('click', () => {
+    // Check if the clicked answer is already open
+    const isActive = faqAnswers[index].classList.contains('faq-answer-show');
+
+    // Close all answers
+    faqAnswers.forEach(answer => {
+      answer.classList.remove('faq-answer-show');
+    });
+
+    // If the clicked answer was not active, open it
+    if (!isActive) {
+      faqAnswers[index].classList.add('faq-answer-show');
+    }
   });
 });
 
+
 // type effect
 
-const textArray = ["a better community", "a better environment", "hyper workflow,", "engaing projects,", "life changing experiences"];
+const textArray = ['build', 'scale', 'rise'];
 let currentTextIndex = 0;
 let currentCharIndex = 0;
 let isDeleting = false;
@@ -60,7 +72,6 @@ type();
   window.onscroll = function() {
   const header = document.querySelector(".primary-header");
 
-  // Check if the page has been scrolled more than 500px
   if (window.scrollY > 300) {
       header.classList.add("sticky-header"); // Add class when scrolled down
   } else {
