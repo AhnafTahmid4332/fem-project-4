@@ -11,16 +11,30 @@ priceToggleLabel.addEventListener('click', () => {
   // Add or remove the class for styling
   priceToggleLabel.classList.toggle('price-toggle-checked');
 
-  if (priceToggleCheckbox.checked) {
-    displayedPrice.innerHTML = '160'
-  } else {
-    displayedPrice.innerHTML = '86'
-  }
+  displayedPrice.forEach((price, index) => {
+      if (index === 1) {
+      // For Paid plan
+      price.innerHTML = priceToggleCheckbox.checked ? '1400' : '120';
+    } else if (index === 2) {
+      // For Premium plan
+      price.innerHTML = priceToggleCheckbox.checked ? '1890' : '160';
+    }
+  });
 
-  if (priceToggleCheckbox.checked) {
-    priceDuration.innerHTML = '/year'
-  } else {
-    priceDuration.innerHTML = '/mo'
-  }
+  priceDuration.forEach(duration => {
+    if (priceToggleCheckbox.checked) {
+      duration.innerHTML = '/year';
+    } else {
+      duration.innerHTML = '/mo';
+    }
+  });
 
+  actualPrice.forEach(price => {
+    if (price.classList.contains('hidden')) {
+      price.classList.remove('hidden');
+    } else {
+      price.classList.add('hidden');
+    }
+  });
 });
+
