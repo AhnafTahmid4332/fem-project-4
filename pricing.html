@@ -1,3 +1,6 @@
+<!DOCTYPE html><!DOCTYPE html>
+<html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
@@ -6,9 +9,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -22,7 +22,7 @@
           </svg>
         </a>
         <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
-          <span class="visually-hidden" >Menu</span>
+          <span class="visually-hidden">Menu</span>
         </button>
         <nav class="primary-navigation" id="primary-navigation">
 
@@ -36,11 +36,11 @@
           </div>
 
           <ul aria-label="Primary" role="list" class="nav-list">
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Product</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="support.html">Support</a></li>
             <li><a href="terms.html">Terms of Services</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Community</a></li>
+            <li><a href="privacy-policy.html">privacy-policy</a></li>
             <button class="button mobile-nav-button">Get Started</button>
           </ul>
         </nav>
@@ -50,100 +50,98 @@
   </header>
 <main>
 
-<section class="pricing-section">
-  <div class="container pricing-section-container text-center">
-    <h1 class="fw-bold fs-primary-heading">Best Pricing Developer Support Service within Budget</h1>
-    <div class="price-toggle-container">
-      <span class="pricing-time">Billed Monthly</span>
-      <label class="price-toggle" for="price-toggle-checkbox">
-    <input type="checkbox">
-    <span></span>
-  </label>
-    <span class="pricing-time">Billes Annually</span>
-  </div>
-
-
-  <div class="price-cards">
-  <div class="price-card box-shadow">
-    <h2 class="fw-bold fs-secondary-heading text-center">Starter</h2>
-    <p class="text-center">basic</p>
-
-    <div class="price flex">
-     <s class="hidden actual-price" >$59.88</s>
-     <p class="fw-bold text-center fs-secondary-heading">
-      <sup>$</sup><span class="displayed-price"></span>
-     </p>
-     <span class="price-duration">/mo</span>
+  <section class="pricing-section">
+    <div class="container pricing-section-container text-center">
+      <h1 class="fw-bold fs-primary-heading">Best Pricing Developer Support Service within Budget</h1>
+      <div class="price-toggle-container">
+        <span class="pricing-time">Billed Monthly</span>
+        <label class="price-toggle" for="price-toggle-checkbox">
+          <input type="checkbox">
+          <span></span>
+        </label>
+        <span class="pricing-time">Billed Annually</span>
+      </div>
+  
+      <div class="price-cards">
+        <!-- Free Plan -->
+        <div class="price-card box-shadow">
+          <h2 class="fw-bold fs-secondary-heading text-center">Starter</h2>
+          <p class="text-center">Basic</p>
+  
+          <div class="price">
+            <p class="fw-bold text-center fs-secondary-heading">
+              <span class="displayed-price">Free</span>
+            </p>
+          </div>
+  
+          <button class="button price-button">Get Started Now</button>
+  
+          <ul class="price-benifits-list">
+            <li class="flex flex-align-items-center"><img src="images/checkbox-green.svg" alt=""><span> Basic website hosting</span></li>
+            <li class="flex flex-align-items-center"><img src="images/checkbox-green.svg" alt=""><span> Access to basic templates</span></li>
+            <li class="flex flex-align-items-center"><img src="images/checkbox-green.svg" alt=""><span> Community support</span></li>
+            <li class="flex flex-align-items-center"><img src="images/checkbox-green.svg" alt=""><span> Single-page applications</span></li>
+            <li class="flex flex-align-items-center"><img src="images/checkbox-green.svg" alt=""><span> Basic SEO tools</span></li>
+          </ul>
+        </div>
+  
+        <!-- Paid Plan -->
+        <div class="price-card box-shadow">
+          <h2 class="fw-bold fs-secondary-heading text-center">Paid</h2>
+          <p class="text-center">Scale your business</p>
+  
+          <div class="price flex">
+            <s class="hidden actual-price">$1440</s>
+            <p class="fw-bold text-center fs-secondary-heading">
+              <sup class="dollar-sign">$</sup><span class="displayed-price">120</span>
+              <span class="price-duration">/mo</span>
+            </p>
+           
+          </div>
+  
+          <button class="button price-button">Get Started Now</button>
+  
+          <ul class="price-benifits-list">
+            <li class="flex flex-align-items-center"><img src="images/checkbox-green.svg" alt=""><span> Multiple website hosting</span></li>
+            <li class="flex flex-align-items-center"><img src="images/checkbox-green.svg" alt=""><span> Advanced website templates</span></li>
+            <li class="flex flex-align-items-center"><img src="images/checkbox-green.svg" alt=""><span> Email support</span></li>
+            <li class="flex flex-align-items-center"><img src="images/checkbox-green.svg" alt=""><span> Custom domain</span></li>
+            <li class="flex flex-align-items-center"><img src="images/checkbox-green.svg" alt=""><span> Performance monitoring</span></li>
+          </ul>
+        </div>
+  
+        <!-- Premium Plan -->
+        <div class="price-card box-shadow">
+          <h2 class="fw-bold fs-secondary-heading text-center">Premium</h2>
+          <p class="text-center">Unlimited possibilities</p>
+  
+          <div class="price flex">
+            <s class="hidden actual-price">$1920</s>
+            <p class="fw-bold text-center fs-secondary-heading">
+              <sup class="dollar-sign">$</sup><span class="displayed-price">160</span>
+              <span class="price-duration">/mo</span>
+            </p>
+          </div>
+  
+          <button class="button price-button">Get Started Now</button>
+  
+          <ul class="price-benifits-list">
+            <li class="flex flex-align-items-center"><img src="images/checkbox-green.svg" alt=""><span> Unlimited website hosting</span></li>
+            <li class="flex flex-align-items-center"><img src="images/checkbox-green.svg" alt=""><span> Full template library access</span></li>
+            <li class="flex flex-align-items-center"><img src="images/checkbox-green.svg" alt=""><span> 24/7 dedicated support</span></li>
+            <li class="flex flex-align-items-center"><img src="images/checkbox-green.svg" alt=""><span> Free SSL certificate</span></li>
+            <li class="flex flex-align-items-center"><img src="images/checkbox-green.svg" alt=""><span> Advanced performance monitoring</span></li>
+          </ul>
+        </div>
+      </div>
     </div>
-
-    <button class="button price-button">Get Started Now</button>
-
-    <ul class="price-benifits-list">
-      <li class="flex flex-align-items-center"><img src="images/checkbox-green.svg" alt=""><span> Up to 5,000 SKU Sync </span></li>
-      <li class="flex flex-align-items-center"><img src="images/checkbox-green.svg" alt=""><span> Up to 5,000 SKU Sync </span></li>
-      <li class="flex flex-align-items-center"><img src="images/checkbox-green.svg" alt=""><span> Up to 5,000 SKU Sync </span></li>
-      <li class="flex flex-align-items-center"><img src="images/checkbox-green.svg" alt=""><span> Up to 5,000 SKU Sync </span></li>
-      <li class="flex flex-align-items-center"><img src="images/checkbox-green.svg" alt=""><span> Up to 5,000 SKU Sync</span></li>
-    </ul>
-
-  </div>
-
-  <div class="price-card box-shadow">
-    <h2 class="fw-bold fs-secondary-heading text-center">Starter</h2>
-    <p class="text-center">basic</p>
-
-    <div class="price flex">
-     <s class="hidden" >$59.88</s>
-     <p class="fw-bold text-center fs-secondary-heading">
-      <sup>$</sup><span class="displayed-price">55.99</span>
-     </p>
-     <span id="price-duration">/mo</span>
-    </div>
-
-    <button class="button price-button">Get Started Now</button>
-
-    <ul class="price-benifits-list">
-      <li class="flex flex-align-items-center"><img src="images/checkbox-green.svg" alt=""><span> Up to 5,000 SKU Sync </span></li>
-      <li class="flex flex-align-items-center"><img src="images/checkbox-green.svg" alt=""><span> Up to 5,000 SKU Sync </span></li>
-      <li class="flex flex-align-items-center"><img src="images/checkbox-green.svg" alt=""><span> Up to 5,000 SKU Sync </span></li>
-      <li class="flex flex-align-items-center"><img src="images/checkbox-green.svg" alt=""><span> Up to 5,000 SKU Sync </span></li>
-      <li class="flex flex-align-items-center"><img src="images/checkbox-green.svg" alt=""><span> Up to 5,000 SKU Sync</span></li>
-    </ul>
-
-  </div>
-
-  <div class="price-card box-shadow">
-    <h2 class="fw-bold fs-secondary-heading text-center">Starter</h2>
-    <p class="text-center">basic</p>
-
-    <div class="price flex">
-     <s class="hidden"  >$59.88</s>
-     <p class="fw-bold text-center fs-secondary-heading">
-      <sup>$</sup>55.99
-     </p>
-     <span id="price-duration">/mo</span>
-    </div>
-
-    <button class="button price-button">Get Started Now</button>
-
-    <ul class="price-benifits-list">
-      <li class="flex flex-align-items-center"><img src="images/checkbox-green.svg" alt=""><span> Up to 5,000 SKU Sync </span></li>
-      <li class="flex flex-align-items-center"><img src="images/checkbox-green.svg" alt=""><span> Up to 5,000 SKU Sync </span></li>
-      <li class="flex flex-align-items-center"><img src="images/checkbox-green.svg" alt=""><span> Up to 5,000 SKU Sync </span></li>
-      <li class="flex flex-align-items-center"><img src="images/checkbox-green.svg" alt=""><span> Up to 5,000 SKU Sync </span></li>
-      <li class="flex flex-align-items-center"><img src="images/checkbox-green.svg" alt=""><span> Up to 5,000 SKU Sync</span></li>
-    </ul>
-
-  </div>
-  </div>
-
-  </div>
-</section>
+  </section>
 
 
 
 
 </main>
+
 <footer class="primary-footer padding-block-700 bg-neutral-900 text-neutral-100">
   <div class="container">
     <div class="primary-footer-wrapper">
@@ -202,11 +200,11 @@
         <nav class="footer-nav">
           <ul class="flow" style="--flow-spacer: 1em" aria-label="Footer" role="list">
             <li><a href="index.html">Home</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="term.html">Terms of Services</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Community</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="terms.html">Terms of Services</a></li>
+            <li><a href="index.html">Features</a></li>
+            <li><a href="support.html">support</a></li>
             <li><a href="privacy-policy.html">Privacy Policy</a></li>
           </ul>
         </nav>
