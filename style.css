@@ -337,6 +337,88 @@ p[data-width="wide"] {
 }
 
 
+/* FAB */
+
+.message-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px; /* Change left to right */
+  z-index: 1000;
+}
+
+
+.message-icon {
+  background-color: var(--clr-accent-400); /* Customize your color */
+  color: white;
+  border-radius: 50%;
+  width: 40px; /* Customize size */
+  height: 40px; /* Customize size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s; /* Added transform transition */
+}
+
+.icon {
+  font-size: 20px;
+}
+
+.message-popup {
+  display: none; /* Hidden by default */
+  position: absolute;
+  bottom: 70px; /* Position above the icon */
+  right: -20px; /* Start hidden on the right side */
+  width: 300px; /* Customize width */
+  height: 380px;
+  padding-top: 5em;
+  background-color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 15px;
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Added transform transition */
+  opacity: 0; /* Initially invisible */
+  transform: translateY(10px); /* Start slightly lower for animation */
+}
+
+.message-container.active .message-popup {
+  display: block; /* Show the popup */
+  opacity: 1; /* Make it visible */
+  transform: translateY(0); /* Move to original position */
+  right: 0; /* Move into view */
+}
+
+
+.message-container.active .message-icon {
+  transform: scale(1.1); /* Slightly scale up the icon when active */
+}
+
+.close {
+  cursor: pointer;
+  float: right;
+  font-size: 2rem;
+}
+
+.fab-textarea {
+  width: 100%;
+  margin-inline: auto;
+  margin-block: 1em;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 1em;
+
+}
+
+.fab-send-button {
+  background-color: var(--clr-accent-400);
+  width: 100%;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
 
 /* footer */
 
