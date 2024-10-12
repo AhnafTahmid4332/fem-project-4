@@ -79,5 +79,24 @@ type();
   }
 };  
 
+// FAB
+const messageIcon = document.getElementById('messageIcon');
+const messagePopup = document.getElementById('messagePopup');
+const closePopup = document.getElementById('closePopup');
+
+// Toggle the popup when the message icon is clicked
+messageIcon.addEventListener('click', () => {
+    const container = messageIcon.parentElement;
+    container.classList.toggle('active');
+});
+
+// Close the popup when the close button is clicked
+closePopup.addEventListener('click', () => {
+    const container = messageIcon.parentElement;
+    container.classList.remove('active');
+});
+
+
+
 
 
