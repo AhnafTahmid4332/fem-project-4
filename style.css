@@ -371,11 +371,10 @@ p[data-width="wide"] {
   right: -20px; /* Start hidden on the right side */
   width: 300px; /* Customize width */
   height: 380px;
-  padding-block: 5em 10em;
+  padding: 1em;
   background-color: white;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
-  padding: 15px;
   transition: opacity 0.3s ease, transform 0.3s ease; /* Added transform transition */
   opacity: 0; /* Initially invisible */
   transform: translateY(10px); /* Start slightly lower for animation */
